@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* font */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+/* /font */
+
+/* struttura contenitore principale */
+.main-container {
+  width: 85%;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  position: relative;
+}
+/* /struttura contenitore principale */
+
+/* intestazione */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* logo */
+header>img {
+  width: 10%;
+  padding-right: 20px;
+  border-right: 1px solid lightgrey;
+}
+/* /logo */
+
+/* main-nav */
+main {
+  margin-top: 25vh;
+}
+.main-nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 50px 10px 0 10px;
+}
+
+/* immagine tendina */
+.img-curtain {
+  width: 100%;
+  height: 50px;
+  display: none;
+  background-position: center;
+  background-size: contain;
+}
+
+.img-curtain.features {
+  background-image: url("../img/img-4.jpg");
+}
+/* /immagine tendina */
+
+
+li:hover > .img-curtain{
+  display: block;
+}
+
+.main-nav li a {
+  color: #858585;
+  text-decoration: none;
+}
+/* main-nav */
+/* /intestazione */
+
+/* corpo del progetto */
+/* margini tra le sezioni */
+.margin {
+  margin-bottom: 7vh;
+}
+/* margini tra le sezioni */
+
+/* struttura sezione-1 */
+.hero{
+  width: 100%;
+  height: 75vh;
+  position: relative;
+}
+
+.hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.border {
+  border-radius: 20px;
+}
+
+.hero .text {
+  position: absolute;
+  width: 48%;
+  left: 7%;
+  bottom: 20%;
+  color: white;
+}
+
+.hero .text h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.hero .text p {
+  width: 90%;
+}
+/* /struttura sezione-1 */
+
+/* colore testo e titoli */
+.text-color {
+  color: #929292;
+}
+/* /colore testo e titoli */
+
+/* struttura sezione-2 */
+.section-2 {
+  width: 100%;
+}
+
+/* stile titoli */
+.first-row h2 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.first-row h5 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+/* /stile titoli */
+
+
+.second-row {
+  width: 100%;
+  padding: 2% 0;
+}
+
+/* colonne */
+.second-row .columns {
+  float:left;
+}
+
+.col-lateral {
+  width: 20%;
+}
+
+.col-central {
+  width: 58%;
+  margin: 0 1%;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 210px;
+}
+
+.columns img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.columns h4 {
+  margin: 20px 0 15px 0;
+}
+/* /colonne */
+/* /struttura sezione-2 */
+/* /corpo del progetto */
+
+/* footer */
+footer {
+  margin-top: 2vh;
+  text-align: center;
+}
+footer h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+footer h6>span {
+  color: red;
+  font-size: 30px;
+}
+/* /footer */
