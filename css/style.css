@@ -52,21 +52,43 @@ main {
   list-style: none;
   display: inline-block;
   padding: 50px 10px 0 10px;
+  width: 10%;
+  text-align: center;
 }
 
-/* immagine tendina */
+/* immagini a tendina */
 .img-curtain {
   width: 100%;
-  height: 50px;
+  height: 100px;
   display: none;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .img-curtain.features {
   background-image: url("../img/img-4.jpg");
 }
-/* /immagine tendina */
+
+.img-curtain.editorials {
+  background-image: url("../img/img-2.jpg");
+}
+
+.img-curtain.environment {
+  background-image: url("../img/img-3.jpg");
+}
+
+.img-curtain.blog {
+  background-image: url("../img/img-5.jpg");
+}
+
+.img-curtain.shop {
+  background-image: url("../img/img-1.jpg");
+}
+
+.img-curtain.contact {
+  background-image: url("../img/img-6.jpg");
+}
+/* /immagini a tendina */
 
 
 li:hover > .img-curtain{
