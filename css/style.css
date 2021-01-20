@@ -98,6 +98,8 @@ li:hover > .img-curtain{
 .main-nav li a {
   color: #858585;
   text-decoration: none;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 /* main-nav */
 /* /intestazione */
